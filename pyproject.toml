@@ -12,7 +12,6 @@ requires-python = ">=3.11"
 dependencies = []
 
 [project.optional-dependencies]
-telegraph = ["web3>=7.0", "eth-account", "eth-abi", "pycryptodome"]
 dev = ["pytest", "pytest-timeout"]
 
 [tool.setuptools.packages.find]

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cge1"
+version = "0.1.0"
+description = "Declarative objective system for live adversarial evolution"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+telegraph = ["web3>=7.0", "eth-account", "eth-abi", "pycryptodome"]
+dev = ["pytest", "pytest-timeout"]
+
+[tool.setuptools.packages.find]
+include = ["cge1*"]
